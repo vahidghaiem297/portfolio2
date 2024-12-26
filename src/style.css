@@ -1,0 +1,274 @@
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+.list-unstyled {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero__title {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 3;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  text-transform: uppercase;
+  transform: translate(-50%, 0);
+}
+
+.webgl {
+  z-index: 3;
+  position: absolute;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+nav {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu li a {
+  color: rgba(255, 255, 255, .5);
+  position: relative;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.menu li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, .5);
+  z-index: 0;
+}
+
+.menu li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu li a:hover {
+  color: #fff;
+}
+
+.menu li a:hover:after {
+  width: 100%;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+
+}
+
+.social li {
+  margin: 10px;
+}
+
+.social li a {
+  color: rgba(255, 255, 255, .5);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.social li a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width:767px){
+  .menu li{
+    margin: 0 10px;
+  }
+  .menu li a{
+    font-size: 12px;
+  }
+  .hero__title{
+    font-size: 50px;
+  }
+  .social{
+    left: 50%;
+    flex-direction: row;
+    top: auto !important;
+    bottom:0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%)translateY(30%) !important;
+  }
+}
